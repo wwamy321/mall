@@ -1,0 +1,266 @@
+main{width: 100%;}
+main #search{width: 1000px;height: 24px;margin:20px auto;}
+main #search .search-add a{color: #666666;margin-right: 5px;margin-left: 5px;font-size:12px;}
+main #search .search-add a:last-child{color: #F45080;}
+
+main #condition{width: 1000px;height: 368px;border:1px solid #cdcdcd;margin:0px auto 0px;}
+main #condition .condition-one{width: 998px;height: 223px;border-bottom:1px dashed #cdcdcd;}
+main #condition .condition-one dt{widows: 97px;padding-left: 20px;height: 203px;float: left;font-size: 12px;color: #B2B2B2;padding-top: 20px; }
+main #condition .condition-one .center{width: 725px;height: 223px;margin-left: 88px;float: left;}
+main #condition .condition-one .center a{
+			float:left;
+			width: 98px;
+			height: 98px;
+			border:1px solid #cdcdcd;
+			display: block;
+			line-height: 98px;
+			position: relative;
+		}
+main #condition .condition-one .center a i{position: absolute;top:0px;left:0px;width: 98px;height: 98px;text-align: center;line-height: 98px;color: #000;display: none;}
+main #condition .condition-one .center a:hover i{display: block;background:#fff;border:1px solid #F10180;color:#F10180;}
+main #condition .condition-one .center a img{width: 100%;}
+.bk1{margin-top: 10px;margin-left: -1px;}
+.bk2{margin-top: -1px;margin-left:-1px; }
+main #condition .condition-one .more{
+	width: 100px;
+	float: right;
+	color: #666666;
+	margin-top: 8px;
+	margin-right: -8px;
+}
+main #condition .condition-one .more a{
+	color: #666;
+	display: inline-block;
+	width: 45px;
+	height: 20px;
+	border:1px solid #dfdfdf;
+	border-radius:4px;
+	text-align: center;
+	line-height: 20px;
+	margin-left: 8px;
+}
+
+main #condition .condition-two{width: 998px;height: 36px;border-bottom:1px dashed #dfdfdf;}	
+main #condition .condition-two dt{widows: 97px;padding-left: 20px;height: 36px;float: left;font-size: 12px;color: #B2B2B2;line-height: 36px;}
+main #condition .condition-two .center{width: 697px;height: 35px;margin-left: 88px;float: left;}
+main #condition .condition-two .center a{float: left;padding:0px 20px;line-height: 36px;color: #333333;}
+main #condition .condition-two .more{float: right;width: 60px;line-height: 36px;}
+main #condition .condition-two .more a{color: #666;}
+main #condition .condition-three{width: 998px;height: 36px;border-bottom:1px dashed #dfdfdf;}	
+main #condition .condition-three dt{widows: 97px;padding-left: 20px;height: 36px;float: left;font-size: 12px;color: #B2B2B2;line-height: 36px;}
+main #condition .condition-three .center{width: 697px;height: 35px;margin-left: 63px;float: left;}
+main #condition .condition-three .center a{float: left;padding:0px 20px;line-height: 36px;color: #333333;}
+main #condition .condition-three .more{float: right;width: 60px;line-height: 36px;}
+main #condition .condition-three .more a{color: #666;}
+main #condition .condition-four{width: 998px;height: 36px;border-bottom:1px dashed #dfdfdf;}	
+main #condition .condition-four dt{widows: 97px;padding-left: 20px;height: 36px;float: left;font-size: 12px;color: #B2B2B2;line-height: 36px;}
+main #condition .condition-four .center{width: 697px;height: 35px;margin-left: 63px;float: left;}
+main #condition .condition-four .center a{float: left;padding:0px 20px;line-height: 36px;color: #333333;}
+main #condition .condition-four .more{float: right;width: 60px;line-height: 36px;}
+main #condition .condition-four .more a{color: #666;}
+main #condition .condition-five{width: 998px;height: 36px;}	
+main #condition .condition-five dt{widows: 97px;padding-left: 20px;height: 36px;float: left;font-size: 12px;color: #B2B2B2;line-height: 36px;}
+main #condition .condition-five .center{width: 697px;height: 35px;margin-left: 88px;float: left;}
+main #condition .condition-five .center a{float: left;padding:0px 20px;line-height: 36px;color: #333333;}
+main #condition .condition-five .more{float: right;width: 60px;line-height: 36px;}
+main #condition .condition-five .more a{color: #666;}
+main #condition .condition-two .center a:hover{color: #F10180;}
+main #condition .condition-three .center a:hover{color: #F10180;}
+main #condition .condition-four .center a:hover{color: #F10180;}
+main #condition .condition-five .center a:hover{color: #F10180;}
+main .gdxx{width: 1000px;margin:0px auto 20px;height: 27px;}
+main .gdxx span{
+		display: block;
+		width: 123px;
+		height: 27px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #fff #dfdfdf #dfdfdf #dfdfdf;
+		margin:-1px auto 0px;
+		text-align: center;
+		line-height: 27px;
+	}
+main .chanpin-title{
+	width: 999px;
+	height: 46px;
+	background:#F5F5F5;
+	border:1px solid #dfdfdf;
+	margin:0px auto 20px;
+}
+main .chanpin-title div{float: left;}
+main .chanpin-title div:nth-child(1){
+	width: 70px;
+	height: 46px;
+	border:1px solid #F10180;
+	color: #F10180;
+	background:#fff;
+	text-align:center;
+	line-height: 46px;
+	margin-top: -1px;
+	margin-left: -1px;
+}
+main .chanpin-title div:nth-child(2){
+	width: 70px;
+	height: 46px;
+	text-align:center;
+	line-height: 46px;
+	border-right:1px solid #E5E5E5;
+}
+main .chanpin-title div:nth-child(3){
+	width: 70px;
+	height: 46px;
+	text-align:center;
+	line-height: 46px;
+	border-right:1px solid #E5E5E5;
+}
+main .chanpin-title div:nth-child(4){
+	width: 180px;
+	height: 46px;
+	text-align: center;
+	line-height: 46px;
+}
+main .chanpin-title div:nth-child(4) input{
+	width: 60px;
+	height: 22px;
+	border:none;
+	outline: none;
+	padding-left: 2px;
+	font-size: 12px;
+	border:1px solid #e5e5e5;
+
+}
+main .chanpin-title div:nth-child(5){
+	font-size: 12px;
+	height: 46px;
+	line-height: 46px;
+}
+main .chanpin-title div:nth-child(5) input{
+	width: 16px;
+	height: 16px;
+	background:#fff;
+	border:1px solid #e5e5e5;
+	margin-right: 8px;
+	}
+main .chanpin-title div:nth-child(6){
+	float: right;
+	width: 222	px;
+	line-height: 46px;
+	height: 46px;
+}
+main .chanpin-title div:nth-child(6) a{
+	display: inline-block;
+	color: #848585;
+	width: 70px;
+	height: 27px;
+	text-align: center;
+	line-height: 27px;
+	border:1px solid #e5e5e5;
+	margin-left: 4px;
+	margin-right: 4px;
+	background:#fff;
+	border-radius: 5px;
+	font-size: 13px;
+	transition: .6s;
+}
+main .chanpin-title div:nth-child(6) .s1y:hover{color: #f00;background:#FCF5F7;}
+main .chanpin-title div:nth-child(6) .x1y:hover{color: #f00;background:#FCF5F7;}
+
+main article{
+	width: 1020px;
+	margin:0px auto;
+}
+main article .goods-image{
+	width: 1020px;
+	height: 391px;
+	position: relative;
+}
+main article .goods-image .goods-one{
+	width: 238px;
+	height: 364px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	margin-right: 20px;
+	z-index: 3;
+}
+main article .goods-image .goods-one a img{width: 100%;}
+main article .goods-image .goods-one a{display: block;width: 238px;position: relative;}
+main article .goods-image .goods-one a i{position: absolute;bottom:0px;width: 238px;height: 30px;background:rgba(0,0,0,.5);color: #fff;fonr-size:12px;line-height: 30px;font-size: 14px;}
+main article .goods-image .goods-one a i span{display: inline-block;width: 8px;height: 8px;background:url(../images/sprites-hash-c5200387.png) no-repeat -228px -107px;margin-left: 10px;margin-right: 10px;}
+main article .goods-image .goods-one div{width: 238px;height: 30px;line-height: 30px;overflow: hidden;position: relative;}
+main article .goods-image .goods-one div span:first-child{float: left;font-size: 22px;color:#F10180;}
+main article .goods-image .goods-one div span:first-child i{font-size: 14px;}
+main article .goods-image .goods-one div span:last-child{float:right;display:block;width:42px;
+height: 18px;border:1px solid #F1B13B;color:#F1B13B;text-align: center;line-height: 18px;border-radius: 4px;
+margin-top:6px;
+}
+main article .goods-image .goods-one p{width: 238px;font-size:12px;height: 32px;border:1px solid transparent;position: relative;color:#666;}
+
+main article .goods-image .goods-one .side{
+	width: 56px;
+	height: 225px;
+	position:relative;
+	top:-365px;
+	right:-255px;
+}
+main article .goods-image .goods-one .side a{
+	display: block;
+	width: 54px;
+	height: 69px;
+	margin-top: 6px;
+}
+
+
+main article .goods-image .goods-one .msk{
+	position: absolute;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	top:0px;
+	height: 100%;
+	background:rgba(0,0,0,.5);
+	display: none;
+}
+main article .goods-image .goods-one:hover .msk{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+main article .goods-image .goods-two{width: 238px;height: 364px;position: relative;overflow: hidden;float: left;margin-right: 20px;z-index: 3;}
+main article .goods-image .goods-two a img{width: 100%;}
+main article .goods-image .goods-two a{display: block;width: 238px;position: relative;}
+main article .goods-image .goods-two a i{position: absolute;bottom:0px;width: 238px;height: 30px;background:rgba(0,0,0,.5);color: #fff;fonr-size:12px;line-height: 30px;font-size: 14px;}
+main article .goods-image .goods-two a i span{display: inline-block;width: 8px;height: 8px;background:url(../images/sprites-hash-c5200387.png) no-repeat -228px -107px;margin-left: 10px;margin-right: 10px;}
+main article .goods-image .goods-two div{width: 238px;height: 30px;line-height: 30px;overflow: hidden;position: relative;}
+main article .goods-image .goods-two div span:first-child{float: left;font-size: 22px;color:#F10180;}
+main article .goods-image .goods-two div span:first-child i{font-size: 14px;}
+main article .goods-image .goods-two div span:last-child{float:right;display:block;width:42px;height: 18px;border:1px solid #F1B13B;color:#F1B13B;text-align: center;line-height: 18px;border-radius: 4px;margin-top:6px;}
+main article .goods-image .goods-two p{width: 238px;font-size:12px;height: 32px;border:1px solid transparent;position: relative;color:#666;}
+/*main article .goods-image .goods-two:hover{width: 316px;height: 391px;padding: 10px;border:1px solid #e5e5e5;margin-left: -10px;margin-top: -10px;position:relative;z-index:3;background:#fff;}
+main article .goods-image .goods-two .side{width: 56px;height: 225px;position:relative;top:-365px;right:-255px;}
+main article .goods-image .goods-two .side a{display: block;width: 54px;height: 69px;margin-top: 6px;}*/
+main article .goods-image .goods-two:last-child{margin-right: 0px;}
+main article .goods-image .goods-two:last-child{position: relative;}
+
+main article .goods-image .goods-two .msk{
+	position: absolute;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	top:0px;
+	height: 100%;
+	background:rgba(0,0,0,.5);
+	display: none;
+}
+main article .goods-image .goods-two:hover .msk{
+	display: block;
+}
+
+
