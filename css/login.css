@@ -1,0 +1,37 @@
+header{width:100%;height: 100px;}
+header nav{width: 1000px;height: 100px;margin:0px auto;}
+header nav .left{width: 125px;height: 100px;float: left;background:url(../images/sprites-hash-688e96f5.png) no-repeat -300px -57px;}
+header nav .right{width: 296px;height: 100px;float:right;background:url(../images/sprites-hash-688e96f5.png) no-repeat  0px 0px;}
+
+main{width: 100%;height: 650px;background:url(../images/15313796152957.jpg) no-repeat -340px 0px;}
+main .content{width: 1000px;height: 650px;padding:50px 20px;margin:0px auto;}
+main .content .wrap{width: 360px;height: 400px;float: right;}
+
+
+main .content .wrap .title{width: 300px;height: 50px;margin:0px auto;border-bottom:1px solid #E0E0E0;font-size: 16px;color:#F10180;font-weight: 800;text-align: center;line-height:50px;}
+
+main .content .wrap .login{width: 300px;height: 230px;margin:40px auto 20px;}
+
+
+main .content .wrap .login .user{width: 267px;height: 40px;border-radius:5px;margin:10px auto;border:1px solid #B2B2B2;position: relative;}
+main .content .wrap .login .user i{display: inline-block;width: 20px;height: 20px;background:url(../images/sprites-hash-688e96f5.png) no-repeat -348px -161px;position: absolute;top:10px;left:4px;}
+main .content .wrap .login .user input{border:none;height: 40px;margin-left: 30px;outline: none;}
+main .content .wrap .login .pwd{position: relative; width: 267px;height: 40px;border-radius:5px;margin:10px auto;border:1px solid #B2B2B2;}
+main .content .wrap .login .pwd i{display: inline-block;width: 20px;height: 20px;background:url(../images/sprites-hash-688e96f5.png) no-repeat -372px -161px;position: absolute;top:10px;left:4px;}
+main .content .wrap .login .pwd input{border:none;height: 40px;margin-left: 30px;outline: none;}
+
+
+main .content .wrap .login .check{width: 267px;height: 40px;font-size:12px; margin:20px auto;}
+main .content .wrap .login .check input{
+	width: 18px;
+	height: 18px;
+	outline:none;
+	background:url(../images/sprite.png) no-repeat -24px 0px;
+}
+main .content .wrap .login .check a{color:#333333;float: right;}
+
+main .content .wrap .login .denglu{width: 267px;height: 42px;margin:20px auto 0px;}
+main .content .wrap .login .denglu input{width: 267px;height: 42px;background:#F10180;color:#fff;text-align: center;line-height: 42px;border:none;outline: none;cursor:pointer;border-radius:4px; }
+main .content .wrap .more{width: 270px;height: 42px;border-top:1px solid #cdcdcd;margin:0px auto;}
+footer{width: 100%;height: 20px;}
+footer p{width: 1000px;height: 20px;line-height: 20px;font-size: 12px;text-align: center;margin:0px auto;}

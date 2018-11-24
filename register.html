@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/aos.css" />
+    <script src="js/aos.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="left"></div>
+			<div class="right"></div>
+		</nav>
+	</header>
+	<main aos='fade-up' >
+		<div class="content">
+			<div class="wrap">
+				<div class="title">
+					会员注册
+					<span>已注册可<a href="login.html">直接登录</a></span>
+				</div>
+				<form>
+					<div class="tel">
+						<i></i>
+						<input type="text" placeholder="请输入手机号码">
+					</div>
+					<div class="yzm">
+						<div>
+							<i></i>
+							<input type="text" placeholder="请输入验证码">
+						</div>
+						<input type="button" value="获取验证码">
+					</div>
+					<div class="password">
+						<i></i>
+						<input type="text" placeholder="密码由6-20位字母,数字和符号组成">
+					</div>
+					<div class="repeatPsd">
+						<i></i>
+						<input type="text" placeholder="请再次输入上面的密码">
+					</div>
+					<div class="term">
+						<span></span>我已阅读并接受以下条款:《唯品会服务条款》《隐私条款》《唯品支付用户服务协议》
+					</div>
+					<input type="button" value="立即注册">
+				</form>
+				
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>Copyright 2008-2018 vip.com，All Rights Reserved ICP证：粤 B2-20080329</p>
+	</footer>
+	<script>
+        AOS.init({ //初始化代码必须放在底部
+                ease: 'ease-out-back',
+                duration: 1000
+        });
+    </script>
+</body>
+</html>
