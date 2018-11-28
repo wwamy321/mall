@@ -28,7 +28,7 @@
 						<input type="text" placeholder="请输入手机号码">
 					</div>
 					<div class="yzm">
-						<div>
+						<div class="yz">
 							<i></i>
 							<input type="text" placeholder="请输入验证码">
 						</div>
@@ -45,7 +45,7 @@
 					<div class="term">
 						<span></span>我已阅读并接受以下条款:《唯品会服务条款》《隐私条款》《唯品支付用户服务协议》
 					</div>
-					<input type="button" value="立即注册">
+					<input  class="btn" type="button" value="立即注册">
 				</form>
 				
 			</div>
@@ -59,6 +59,74 @@
                 ease: 'ease-out-back',
                 duration: 1000
         });
+    </script>
+    <script>
+   		~function(){//没有卵用
+   			var tel = document.getElementsByClassName("tel")[0];
+   			var input1 = tel.getElementsByTagName("input")[0]
+   			var yz = document.getElementsByClassName("yz")[0];
+   			var input2 = yz.getElementsByTagName("input")[0]
+   			var pwd = document.getElementsByClassName("password")[0];
+   			var input3 = pwd.getElementsByTagName("input")[0]
+   			var repeatPsd = document.getElementsByClassName("repeatPsd")[0];
+   			var input4 = repeatPsd.getElementsByTagName("input")[0]
+   			var oBtn = document.getElementsByClassName("btn")[0];
+			tel.addEventListener("mouseover", function(){	
+				let input = input1.value;
+   				if(input == ''){
+   					tel.style.border="1px solid #f00"
+   				}
+   			}, false)
+   			tel.addEventListener("mouseout", function(){
+   				let input = input1.value;
+   				if(input != ''){
+   					tel.style.border="1px solid #ccc"
+   				}
+   			}, false)
+   			yz.addEventListener("mouseover", function(){	
+				let input = input2.value;
+   				if(input == ''){
+   					yz.style.border="1px solid #f00"
+   				}
+   			}, false)
+   			yz.addEventListener("mouseout", function(){
+   				let input = input2.value;
+   				if(input != ''){
+   					yz.style.border="1px solid #ccc"
+   				}
+   			}, false)
+   			pwd.addEventListener("mouseover", function(){	
+				let input = input3.value;
+   				if(input == ''){
+   					pwd.style.border="1px solid #f00"
+   				}
+   			}, false)
+   			pwd.addEventListener("mouseout", function(){
+   				let input = input3.value;
+   				if(input != ''){
+   					pwd.style.border="1px solid #ccc"
+   				}
+   			}, false)
+   			repeatPsd.addEventListener("mouseover", function(){	
+				let input = input4.value;
+   				if(input == ''){
+   					repeatPsd.style.border="1px solid #f00"
+   				}
+   			}, false)
+   			repeatPsd.addEventListener("mouseout", function(){
+   				let input = input4.value;
+   				if(input != ''){
+   					repeatPsd.style.border="1px solid #ccc"
+   				}
+   			}, false)
+   			oBtn.onclick = function(){
+   				var a = input1.value;
+   				var b = input2.value;
+   				var c = input3.value;
+   				var d = input4.value;
+   				if(a=='' && b=='' && c=='' && d=='' ) alert("输入不能为空")
+   			}
+   		}()
     </script>
 </body>
 </html>

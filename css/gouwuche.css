@@ -99,6 +99,7 @@ main .main .content .list{
 	width: 928px;
 	height: 380px;
 	background:#F9F9F9;
+	overflow:auto;
 }
 main .main .content .list table td{
 	padding-top: 15px;
@@ -130,6 +131,21 @@ main .main .content .list table td.list02{
 }
 main .main .content .list table td.list03{
 	width: 100px;
+}
+main .main .content .list table td.list03 p{
+	background: #fff;
+	width: 60px;
+	border:1px solid #ccc;
+	margin-top: 5px;
+}
+main .main .content .list table td.list03 span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 2px;
+	background: #fff;
+	font-size: 15px;
+	cursor:pointer;	
 }
 main .main .content .list table td.list02 span{font-size: 14px;}
 main .main .content .list table td.list02 del{font-size: 12px;color:#666;}

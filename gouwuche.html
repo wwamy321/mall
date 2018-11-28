@@ -13,7 +13,8 @@
 	</style>
 </head>
 <body>
-<!-- 	头部 -->
+<div class="shopping">
+	<!-- 	头部 -->
 	<header>
 		<div class="center1">
 			<div class="nav-top">
@@ -132,14 +133,14 @@
 			</div>
 			<div class="ri-search fr">
 				<form action="" method="get" class="fl">
-					<input type="text" placeholder="&nbsp;大家都在搜:连衣裙">
+					<input type="text" placeholder="  大家都在搜:连衣裙">
 					<span></span>
 				</form>
 				<div class="fl cart">
 					<a href="#">
 						<span class="bg"></span>
 						<span class="wz">购物袋</span>
-						<span class="zero">0</span>
+						<span class="zero" v-text="i"></span>
 					</a>
 					<div>
 						<span></span>
@@ -192,7 +193,7 @@
  		</ul>
  	</div>
  	<div class="add center1">
- 		<p>配送至<span>哈尔滨市</span> 请在倒计时结束前提交订单，下单后你另有 30 分钟的支付时间。</p>
+ 		<p>配送至<span>哈尔滨市</span> 请在订单结束前提交订单，请尽快付款。</p>
  	</div>
  	<div class="main">
  		<div class="jingxuan">
@@ -212,77 +213,27 @@
  				</div>
  				<div class="list">
  					<table>
- 						<tr>
+ 						<tr v-for="(item, index) in shoppingList" :key="index" >
  							<td class="list01">
  								<div class="list-01-one">
- 									<div><img src="images/de6d90fe-6be0-4e34-bc64-dd4317f68431_t_235x297_90.jpg" alt=""></div>
- 									<p><span style="color:#F10180" >自营 </span>HLA海澜之家-淡定从容迎夏天 - 2018夏季新品镶拼条纹</p>
-									<i>尺码:48</i>
+ 									<div><img :src="item.src" alt=""></div>
+ 									<p><span style="color:#F10180" >自营 </span>{{item.name}}</p>
+									<i>尺码:{{item.size}}</i>
  									
  								</div>
  							</td>
  							<td class="list02">
  								<div class="">
- 									<span>¥98</span><br /><del>¥98</del>
+ 									<span>¥{{item.price}}</span><br /><del>¥{{item.price}}</del>
  								</div>
  							</td>
- 							<td class="list03">1</td>
- 							<td class="list04">¥98</td>
- 							<td class="list05">删除</td>
- 						</tr>
- 						<tr>
- 							<td class="list01">
- 								<div class="list-01-one">
- 									<div><img src="images/de6d90fe-6be0-4e34-bc64-dd4317f68431_t_235x297_90.jpg" alt=""></div>
- 									<p><span style="color:#F10180" >自营 </span>HLA海澜之家-淡定从容迎夏天 - 2018夏季新品镶拼条纹</p>
-									<i>尺码:48</i>
- 									
- 								</div>
+ 							<td class="list03">
+							<p><span @click="reduce(index)">-</span>{{item.num}}<span @click="plus(index)">+</span></p>
  							</td>
- 							<td class="list02">
- 								<div class="">
- 									<span>¥98</span><br /><del>¥98</del>
- 								</div>
+ 							<td class="list04">¥{{item.subtotal}}</td>
+ 							<td class="list05">
+ 								<a href="javascript:void(0)" @click="del(index)">删除</a>
  							</td>
- 							<td class="list03">1</td>
- 							<td class="list04">¥98</td>
- 							<td class="list05">删除</td>
- 						</tr>
- 						<tr>
- 							<td class="list01">
- 								<div class="list-01-one">
- 									<div><img src="images/de6d90fe-6be0-4e34-bc64-dd4317f68431_t_235x297_90.jpg" alt=""></div>
- 									<p><span style="color:#F10180" >自营 </span>HLA海澜之家-淡定从容迎夏天 - 2018夏季新品镶拼条纹</p>
-									<i>尺码:48</i>
- 									
- 								</div>
- 							</td>
- 							<td class="list02">
- 								<div class="">
- 									<span>¥98</span><br /><del>¥98</del>
- 								</div>
- 							</td>
- 							<td class="list03">1</td>
- 							<td class="list04">¥98</td>
- 							<td class="list05">删除</td>
- 						</tr>
- 						<tr>
- 							<td class="list01">
- 								<div class="list-01-one">
- 									<div><img src="images/de6d90fe-6be0-4e34-bc64-dd4317f68431_t_235x297_90.jpg" alt=""></div>
- 									<p><span style="color:#F10180" >自营 </span>HLA海澜之家-淡定从容迎夏天 - 2018夏季新品镶拼条纹</p>
-									<i>尺码:48</i>
- 									
- 								</div>
- 							</td>
- 							<td class="list02">
- 								<div class="">
- 									<span>¥98</span><br /><del>¥98</del>
- 								</div>
- 							</td>
- 							<td class="list03">1</td>
- 							<td class="list04">¥98</td>
- 							<td class="list05">删除</td>
  						</tr>
  					</table>
  				</div>
@@ -297,12 +248,12 @@
  		<div class="top">
  			<div class="top-one">
  				<i>使用优惠券</i>
- 				<span>¥462</span>
- 				<h1>共<em style="color:#ED2787">4</em>件商品  商品金额</h1>
+ 				<span>¥{{totalPrice}}</span>
+ 				<h1>共<em style="color:#ED2787" >{{i}}</em>件商品  商品金额</h1>
  			</div>
  			<div class="top-two">
  				<i>使用优惠口令</i>
- 				<span>¥462</span>
+ 				<span>¥{{totalPrice}}</span>
  				<h1>总金额（未含运费）</h1>	
  			</div>
  		</div>
@@ -412,47 +363,50 @@
 				 <a href="#" class="link6"></a>
 				 <a href="#" class="link7"></a>
 			</div>
+		</div>
+	</footer>
+	<!-- 底部结束 -->
+	<!--右侧侧边栏 r-flex -->
+	<div id="r-fixed">
+		<ul>
+			<li class="list-1">
+				<div class="hov_one"></div>
+			</li>
+			<li class="list-2"></li>
+			<li class="list-3">
+				<div class="hov_two">
+					<a href="#">我的优惠券</a>
+				</div>
+			</li>
+			<li class="list-4">
+				<div class="hov_thr">
+					<a href="#">品牌收藏</a>
+				</div>
+			</li>
+			<li class="list-5">
+				<div class="hov_for">
+					<a href="#">商品收藏</a>
+				</div>
+			</li>
+			<li class="list-6">
+				<div class="hov_fiv">
+					<a href="#">我的足迹</a>
+				</div>
+			</li>
+			<li class="list-7">
+				<div class="hov_sev"></div>
+			</li>
+			<li class="list-8">
+				<div class="hov_eig"></div>
+			</li>
+		</ul>
 	</div>
-</footer>
-<!-- 底部结束 -->
-<!--右侧侧边栏 r-flex -->
-<div id="r-fixed">
-	<ul>
-		<li class="list-1">
-			<div class="hov_one"></div>
-		</li>
-		<li class="list-2"></li>
-		<li class="list-3">
-			<div class="hov_two">
-				<a href="#">我的优惠券</a>
-			</div>
-		</li>
-		<li class="list-4">
-			<div class="hov_thr">
-				<a href="#">品牌收藏</a>
-			</div>
-		</li>
-		<li class="list-5">
-			<div class="hov_for">
-				<a href="#">商品收藏</a>
-			</div>
-		</li>
-		<li class="list-6">
-			<div class="hov_fiv">
-				<a href="#">我的足迹</a>
-			</div>
-		</li>
-		<li class="list-7">
-			<div class="hov_sev"></div>
-		</li>
-		<li class="list-8">
-			<div class="hov_eig"></div>
-		</li>
-	</ul>
 </div>
 
-
+	<script src="js/vue.js"></script>
+	<script src="js/shopping.js"></script>
 <script>
+
 	var oFoot = document.getElementsByClassName('foot')[0];
 	var oBtn = oFoot.getElementsByTagName('button')[0];
 	oBtn.onclick = function(){
